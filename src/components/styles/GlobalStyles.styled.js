@@ -6,11 +6,23 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
     }
     body{
-        margin: 0;
-        padding: 0;
+        background-color: #ecfafd;
+        width: 100%;
+        margin: auto;
+        padding: 2rem;
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
     }
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+   
 `;
 
 export default GlobalStyles;
