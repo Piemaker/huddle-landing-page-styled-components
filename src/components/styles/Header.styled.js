@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  min-width: 100%;
+  padding: ${({ theme }) => theme.spacing.padding};
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-image: url("./images/bg-hero-mobile.svg");
+
   margin-bottom: 3rem;
   div:first-child {
     flex: 1;
@@ -15,7 +16,7 @@ export const StyledHeader = styled.header`
     flex: 2;
     margin-top: 3rem;
   }
-  @media only screen and (min-width: ${(({theme})=> theme.desktop.width)}) {
+  @media only screen and (min-width: ${({ theme }) => theme.desktop.width}) {
     flex-direction: row;
     background-image: url("./images/bg-hero-desktop.svg");
     justify-content: center;

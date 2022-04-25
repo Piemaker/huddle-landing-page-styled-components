@@ -5,6 +5,7 @@ import { Nav } from "./components/nav/Nav";
 import { StyledContainer } from "./components/styles/Container.styled";
 import GlobalStyles from "./components/styles/GlobalStyles.styled";
 import Card from "./components/card/Card";
+import Footer from "./components/footer/Footer";
 const theme = {
   colors: {
     Pink: "hsl(322, 100%, 66%)",
@@ -28,6 +29,9 @@ const theme = {
   desktop: {
     width: "1000px",
   },
+  spacing: {
+    padding: "2rem",
+  },
 };
 function App() {
   return (
@@ -42,6 +46,8 @@ function App() {
             return <Card key={index} {...{ ...info, layout }} />;
           })}
         </StyledContainer>
+
+        <Footer />
       </>
     </ThemeProvider>
   );

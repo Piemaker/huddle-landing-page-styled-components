@@ -6,16 +6,14 @@ export function Nav() {
   const theme = useTheme();
   return (
     <StyledNav>
-      <nav>
-        <ul>
-          <li></li>
-          <li>
-            <StyledButton color_hover={theme.colors.Grayish_Blue}>
-              try it free
-            </StyledButton>
-          </li>
-        </ul>
-      </nav>
+      <ul>
+        <li></li>
+        <li>
+          <StyledButton color_hover={theme.colors.Grayish_Blue}>
+            try it free
+          </StyledButton>
+        </li>
+      </ul>
     </StyledNav>
   );
 }

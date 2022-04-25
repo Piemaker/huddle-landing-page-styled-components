@@ -1,10 +1,12 @@
 import styled from "styled-components";
-export const StyledNav = styled.div`
-  nav {
+export const StyledNav = styled.nav`
+  
     ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: ${(({theme})=> theme.spacing.padding)};
+
       li:first-child {
         flex: 1;
         max-width: 100px;
@@ -13,7 +15,7 @@ export const StyledNav = styled.div`
         background-size: contain;
         background-repeat: no-repeat, repeat;
       }
-    
+
       /* li:last-child {
         display: flex;
         justify-content: center;
@@ -30,5 +32,4 @@ export const StyledNav = styled.div`
         }
       } */
     }
-  }
 `;
